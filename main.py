@@ -16,11 +16,13 @@ import torch
 import os
 from ultralytics import YOLO
 
+
 def setup():
     """Ensure the save directory exists."""
     save_folder = "cropped-labels"
     os.makedirs(save_folder, exist_ok=True)
     return save_folder
+
 
 def detect_and_crop_labels(reference_image_path, save_folder):
     """Detect and crop labels based on a reference image using YOLOv8."""
@@ -36,12 +38,14 @@ def detect_and_crop_labels(reference_image_path, save_folder):
     print("Press 's' to capture and process, or 'q' to quit.")
     while True:
         ret, frame = cap.read()
+        
         if not ret:
             print("Failed to grab frame")
             break
         
         cv2.imshow("Camera Feed", frame)
         key = cv2.waitKey(1) & 0xFF
+        
         
         if key == ord('s'):  # Capture image and process
             cap.release()
@@ -62,10 +66,12 @@ def detect_and_crop_labels(reference_image_path, save_folder):
                     print(f"Cropped label saved at: {save_path}")
             return
         
+        
         elif key == ord('q'):
             cap.release()
             cv2.destroyAllWindows()
             return
+
 
 # Usage
 save_folder = setup()
