@@ -1,4 +1,8 @@
 ## Mimir
 *Trust at First Sight*
 
-Developing an device to assist visually impaired individuals of daily tasks such as cooking
+This repo represents my software contribution towards the project with processing images and to cropping it for the LLM to read and process to our TTS model.
+
+[Kaggle - Dataset for Nutrition Labels](https://www.kaggle.com/datasets/shensivam/nutritional-facts-from-food-label/data)
+
+*Tools: YOLOv8, OpenCV, PyTorch*
