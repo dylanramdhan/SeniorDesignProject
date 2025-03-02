@@ -2,9 +2,9 @@
     ### Senior Design Project ###
     Engineer: Dylan Ramdhan
     
-    Tools: Utilizing YOLOv8 for object detection
+    Tools: YOLOv8, PyTorch, OpenCV, and Ultralytics
+    Task: Detect and crop nutrition labels from a webcam feed
     
-    Looking more into OpenCV with Recognition in Cooking
     This script will take a picture from the webcam and crop the image to the most significant region.
     This is useful for cropping out labels from products.
 """
@@ -70,6 +70,8 @@ def detect_and_crop_labels(reference_image_path, save_folder):
 # Usage
 save_folder = setup()
 detect_and_crop_labels("nutrition_label.png", save_folder)
+
+
 
 
 
