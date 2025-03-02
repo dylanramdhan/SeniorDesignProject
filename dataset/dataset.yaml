@@ -1,0 +1,5 @@
+train: /Users/dylanramdhan/Documents/GitHub/PersonalRepo/SeniorDesignProject/dataset/images/train/
+val: /Users/dylanramdhan/Documents/GitHub/PersonalRepo/SeniorDesignProject/dataset/images/val/
+
+nc: 1
+names: ["nutrition_label"]
