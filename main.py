@@ -5,7 +5,9 @@
     Tools: YOLOv8, PyTorch, OpenCV, and Ultralytics
     Task: Detect and crop nutrition labels from a webcam feed
     
-    This script will take a picture from the webcam and crop the image to the most significant region.
+    This script will take a picture from the webcam and crop the image to the most 
+    significant region of the Nutrition Labels/Facts.
+    
     This is useful for cropping out labels from products.
 """
 
@@ -73,7 +75,7 @@ def detect_and_crop_labels(reference_image_path, save_folder):
             return
 
 
-# Usage
+# usage
 save_folder = setup()
 detect_and_crop_labels("nutrition_label.png", save_folder)
 
