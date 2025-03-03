@@ -92,7 +92,7 @@ detect_and_crop_labels("nutrition_label.png", save_folder)
 
 
 
-###### ONLY takes one photo... not quite accurate #######
+###### ONLY takes one photo... not quite accurate (w/o dataset) #######
 # import cv2
 # import torch
 # import os
