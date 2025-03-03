@@ -25,9 +25,9 @@ def setup():
 
 
 def detect_and_crop_labels(reference_image_path, save_folder):
-    """Detect and crop labels based on a reference image using YOLOv8."""
-    # Load YOLOv8 model (using a larger model for better detection)
-    model = YOLO("yolov8x.pt")
+    # detecting and cropping labels based on refernce images using YOLOv8
+    # load YOLOv8 model (using a larger model for better detection)
+    model = YOLO("runs/detect/train3/weights/best.pt")  # using the trained model
     
     # Open webcam first to ensure it's available
     cap = cv2.VideoCapture(0)
