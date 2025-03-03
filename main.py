@@ -31,7 +31,7 @@ def detect_and_crop_labels(reference_image_path, save_folder):
     # load YOLOv8 model (using a larger model for better detection)
     model = YOLO("runs/detect/train3/weights/best.pt")  # using the trained model
     
-    # Open webcam first to ensure it's available
+    # opening webcam first to ensure it's available
     cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         print("Error: Could not open webcam.")
