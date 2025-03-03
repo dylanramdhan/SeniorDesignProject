@@ -6,12 +6,16 @@
     Task: Detect and crop nutrition labels from a webcam feed
     
     This script will take a picture from the webcam and crop the image to the most 
-        significant region of the Nutrition Labels/Facts.
-    
-    This is useful for cropping out labels from products.
+        significant region of the Nutrition Labels/Facts. This is useful for cropping 
+        out labels from products.
 """
 
-## Note to self: Feed more images of nutrition labels to the model to improve detection accuracy
+# Note to self: Feed more images of nutrition labels to the model to improve detection accuracy
+# Only defec: Can't read from distance and can't read curvature labels
+#      --> Solution: 
+#           - Use a larger model for better detection accuracy
+#           - Use a more diverse dataset for training (include curved labels in dataset)
+
 
 import cv2
 import torch
@@ -88,7 +92,7 @@ detect_and_crop_labels("nutrition_label.png", save_folder)
 
 
 
-######  ONLY takes one photo... not quite accurate#######
+###### ONLY takes one photo... not quite accurate #######
 # import cv2
 # import torch
 # import os
