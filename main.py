@@ -6,7 +6,7 @@
     Task: Detect and crop nutrition labels from a webcam feed
     
     This script will take a picture from the webcam and crop the image to the most 
-    significant region of the Nutrition Labels/Facts.
+        significant region of the Nutrition Labels/Facts.
     
     This is useful for cropping out labels from products.
 """
